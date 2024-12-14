@@ -1,9 +1,9 @@
 
-from Flask import Flask, render_template, request
+from Flask import flask, render_template, request
 import pickle
 import numpy as np
 
-app = Flask(__name__)
+app = flask(__name__)
 
 # Load models
 with open('models/kmeans_model.pkl', 'rb') as f:
